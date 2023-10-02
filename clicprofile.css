@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+.logoclic {
+    margin-bottom: 5px;
+    width: 70px;
+    margin-right: auto;
+}
+
+nav .nav-item {
+    margin-left: 45px;
+    font-size: 16px;
+}
+
+nav .nav-item a{
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.7;
+}
+
+nav .nav-item a:hover{
+    opacity: 1;
+}
+
+nav .nav-item button {
+    margin-right: 20px;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    transition: 0.3s;
+}
+
+nav .nav-item button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.backimg {
+    margin: 0 20px;
+    margin-top: 20px;
+    background: rgba(255, 166, 0, 0.525);
+    padding-bottom: 180px;
+    border-top-left-radius: 50px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 20px;
+    margin-top: 20px;
+    background: #e1e1e1;
+    padding: 2px;
+}
+
+.backimg p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 35px;
+    margin-top: 20px;
+    color: #000;
+    background-color: #fff;
+    padding: 5px 5px;
+}
+
+.profile-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details-box {
+    flex: 1;
+    min-width: 230px;
+    margin: 20px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 30px;
+    border-radius: 20px;
+    padding: 18px 20px;
+    background: rgb(230, 230, 230);
+}
+
+.details-box h3 {
+    background: #D09223;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 8px 8px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.details-box p {
+    margin-bottom: 8px;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 7px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        align-items: center;
+        height: 60px;
+    }
+
+    nav .nav-item:not(:last-child) a {
+        display: none;
+    }
+
+    nav .nav-item button {
+        margin-right: 10px;
+    }
+
+    .nav-links-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        background-color: rgb(245, 245, 245);
+    }
+
+    .nav-links-mobile .nav-item {
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    
+    .nav-links-mobile .nav-item a{
+        text-decoration: none;
+        padding-bottom: 5px;
+        color: #000;
+    }
+    
+    .nav-links-mobile .nav-item a:hover{
+        border-bottom: 2px solid #000;
+    }
+
+    .backimg {
+        margin: 10px;
+        padding-bottom: 0;
+        border-top-left-radius: 0;
+    }
+
+    .profile-pic {
+        text-align: center;
+        width: 100px;
+        height: 100px;
+    }
+
+    .backimg p {
+        font-size: 16px;
+        margin: 30px;
+    }
+
+    .profile-details {
+        flex-direction: column;  /* Makes the boxes stack on mobile */
+    }
+
+    .details-box {
+        flex: 1 0 95%;  /* Takes full width on mobile */
+        margin: 10px;
+    }
+}
